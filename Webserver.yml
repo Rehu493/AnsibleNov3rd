@@ -13,14 +13,3 @@
      name: apache2
      state: started
     when: ansible_os_family =="Debian"
-
-  - name: Install webserver httpd on AnsibleNode Redhat
-    yum:
-     name: httpd
-     state: present
-    when: ansible_os_family =="RedHat"
-  - name: Start webserver httpd service on AnsibleNode of Redhat
-    yum:
-     name: httpd
-     state: started
-    when: ansible_os_family =="RedHat"
