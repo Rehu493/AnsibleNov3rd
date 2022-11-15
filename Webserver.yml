@@ -1,6 +1,7 @@
 --- 
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks:
   - name: Install webserver apache2 on Ansible Nodes
     apt:
