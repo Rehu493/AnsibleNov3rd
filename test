@@ -1,0 +1,11 @@
+[mygroup]
+
+host1 java 8
+host2 java 8
+host3 java 8
+host4 java 11
+host5 java 8
+host6 java 8
+
+
+Note : Ansible Engg , gives high priority to host variable than group variable.
