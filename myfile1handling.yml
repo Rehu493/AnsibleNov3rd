@@ -7,11 +7,11 @@
     apt:
       name: apache2
       state: present
-  - name: already created myindex.html , copying into node side.
+  - name: already created myindex.html , copying into nodes.side
     copy:
       src: myindex.html
       dest: /var/www/html/index.html
-  - name: copy myindex.j2 file into nodes side
+  - name: copy myindex.j2 file into nodes.side
     ansible.builtin.template:
       src: myindex.j2
       dest: /var/www/html/index.html
