@@ -17,9 +17,8 @@
       name: git
       state: present
   when: myvariable1.stderr ==""
-
-  - name: I want to Install tree
+  - name: I want to Install wget
     apt:
-      name: tree
+      name: wget
       state: present
-  when: myvariable1.stderr !=""
+  when: myvariable1.stderr !="" 
