@@ -11,3 +11,14 @@
   - name: i want to display first task result.
     debug:
       msg: "{{myvariable1}}"
+
+  - name: I want to Install git
+    apt:
+      name: git
+      state: present
+  
+
+  - name: I want to Install tree
+    apt:
+      name: tree
+      state: present
