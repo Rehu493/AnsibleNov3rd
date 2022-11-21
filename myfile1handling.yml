@@ -11,9 +11,9 @@
     copy:
       src: myindex.html
       dest: /var/www/html/index.html
-  - name: copy myindex.j2 file into nodes.side
-    ansible.builtin.template:
-      src: myindex.j2
+  - name: copy myindex.J2 file into nodes.side
+    template:
+      src: myindex.J2
       dest: /var/www/html/index.html
     notfiy: restartwebserver
   - name: remote file 
