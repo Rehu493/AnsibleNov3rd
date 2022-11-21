@@ -16,9 +16,10 @@
     apt:
       name: git
       state: present
-  when: myvariable1.stderr ==""
+    when: myvariable1.stderr ==""
+  
   - name: I want to Install wget
     apt:
       name: wget
       state: present
-  when: myvariable1.stderr !="" 
+    when: myvariable1.stderr !="" 
