@@ -11,7 +11,7 @@
     apt:
       name: tree
       stateeeeeee: present
-  
+    ignore_errors: yes
   - name: i want to install wget
     apt:
       name: wget
