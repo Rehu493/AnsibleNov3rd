@@ -1,2 +1,13 @@
 ---
 # tasks file for mytomcatrole
+- include_tasks: useradd
+- include_tasks: update.yml
+- include_tasks: installjava.yml
+- include_tasks: downloadtomcat.yml
+- include_tasks: extract.yml
+- include_tasks: ownership.yml
+- include_tasks: tomcatadminuser.yml
+- include_tasks: manager.yml
+- include_tasks: hostmanager.yml
+- include_tasks: systemd.yml
+- include_tasks: tomcatstart.yml
