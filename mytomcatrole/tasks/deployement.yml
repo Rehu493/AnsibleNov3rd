@@ -2,5 +2,5 @@
 - name: deployment any war file into the any ubuntu
   ansible.builtin.get_url:
     url: http://glasfish.dev.java.net/downloads/quickstart/hello.war
-    dest: /opt/tomcat/webapps
+    dest: /opt/tomcat/webapps/hello.war
     force_basic_auth: yes
