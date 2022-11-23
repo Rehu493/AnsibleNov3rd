@@ -1,5 +1,5 @@
 ---
-- hosts: myDBserver
+- hosts: 172.31.7.32
   become: all
   roles:
-  - {role: mytomcatrole, when: ansible_os_family=="Debain"}
+  - { role: mywebrole, when: ansible_os_family=="Debian" }
