@@ -26,3 +26,5 @@
 [myredhatserver]
 172.31.13.151
 
+[tomcatipaddress]
+172.31.13.234
